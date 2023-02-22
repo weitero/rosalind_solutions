@@ -1,7 +1,8 @@
 import typing
-
 from decimal import Decimal
 from io import StringIO
+
+import __init__
 
 
 def solve_it(fh: typing.IO):
@@ -12,19 +13,10 @@ def solve_it(fh: typing.IO):
     Rosalind_0808
     60.919540
     """
-
-    d = {}
-    k = ''
-    for l in fh.readlines():
-        l = l.rstrip('\n')
-        if l.startswith('>'):
-            k = l[1:]
-            d[k] = ''
-        else:
-            d[k] = d[k] + l
-
     def helper(s: str):
-        return (s.count('G') + s.count('C')) / len(s) * 100
+        return (s.count('C') + s.count('G')) / len(s) * 100
+
+    d = __init__.read_fasta(fh)
     d2 = {k: helper(d[k]) for k in d}
 
     max_k = max(d2, key=d2.get)

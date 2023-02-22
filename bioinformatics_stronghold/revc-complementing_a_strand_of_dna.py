@@ -12,5 +12,5 @@ def solve_it(s: str):
         'T': 'A',
     }
     rev_s = s[::-1]
-    comp_rev_s = ''.join([bp[x] for x in rev_s])
+    comp_rev_s = rev_s.translate(str.maketrans('ACGT', 'TGCA'))
     return comp_rev_s

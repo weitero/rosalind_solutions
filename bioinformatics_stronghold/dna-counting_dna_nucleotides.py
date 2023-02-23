@@ -5,4 +5,4 @@ def solve_it(s: str):
     >>> solve_it('AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC')
     [20, 12, 17, 21]
     """
-    return [s.count('A'), s.count('C'), s.count('G'), s.count('T')]
+    return [s.count(b) for b in 'ACGT']

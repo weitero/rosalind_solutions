@@ -6,5 +6,5 @@ def solve_it(s: str, a: int, b: int, c: int, d: int):
     Humpty
     Dumpty
     """
-    print(s[a:b+1])
-    print(s[c:d+1])
+    print(s[a: b + 1])
+    print(s[c: d + 1])

@@ -8,7 +8,7 @@ def solve_it(a: int, b: int):
     assert a < b < 10000
 
     if b - a == 1:
-        if a % 2 ==0:
+        if a % 2 == 0:
             return 0
         return a
     else:

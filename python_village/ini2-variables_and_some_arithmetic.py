@@ -1,4 +1,4 @@
-def solve_it(a: int, b: int):
+def solve_it(a: int, b: int) -> int:
     """
     Return the integer corresponding to the square of the hypotenuse of the right triangle whose legs have lengths `a` and `b`.
 

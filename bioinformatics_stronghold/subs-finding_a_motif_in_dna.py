@@ -1,4 +1,4 @@
-def solve_it(s: str, t: str, l: int = 0):
+def solve_it(s: str, t: str, i: int = 0) -> None:
     """
     Return all locations of `t` as a substring of `s`.
 
@@ -7,8 +7,7 @@ def solve_it(s: str, t: str, l: int = 0):
     4
     10
     """
-    if t in s:
-        i = s.index(t) + 1
-        l = i + l
+    l = s.find(t, i) + 1
+    if l:
         print(l)
-        solve_it(s[i:], t, l)
+        solve_it(s, t, i + l)

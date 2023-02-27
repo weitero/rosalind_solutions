@@ -1,4 +1,4 @@
-def solve_it(t: str):
+def solve_it(t: str) -> str:
     """
     Return the transcribed RNA string of `t`.
 

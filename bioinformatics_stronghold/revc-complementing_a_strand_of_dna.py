@@ -1,4 +1,4 @@
-def solve_it(s: str):
+def solve_it(s: str) -> str:
     """
     Return the reverse complement `sc` of `s`.
 

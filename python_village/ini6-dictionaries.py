@@ -1,7 +1,7 @@
 from collections import Counter
 
 
-def solve_it(s: str):
+def solve_it(s: str) -> None:
     """
     Return the number of occurrences of each word `s`, where words are separated by spaces. Words are case-sensitive, and the lines in the output can be in any order.
 
